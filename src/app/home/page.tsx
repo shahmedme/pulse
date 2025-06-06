@@ -2,6 +2,9 @@ import PostBox from "@/components/feed/PostBox";
 import { prisma } from "@/lib/prisma";
 import Sidebar from "./Sidebar";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 async function getPosts() {
 	const posts = await prisma.post.findMany({
 		include: {

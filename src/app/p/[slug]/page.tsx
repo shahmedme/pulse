@@ -3,6 +3,9 @@ import { notFound } from "next/navigation";
 import { CommunityHeader } from "@/app/p/[slug]/CommunityHeader";
 import { PostList } from "@/app/p/[slug]/PostList";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 async function getCommunity(slug: string) {
 	const community = await prisma.community.findUnique({
 		where: { slug },
