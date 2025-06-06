@@ -130,9 +130,9 @@ function UserDropdown() {
 				<DropdownMenuGroup>
 					<DropdownMenuItem
 						className="cursor-pointer"
-						onClick={() => router.push("/dashboard")}
+						onClick={() => router.push("/profile")}
 					>
-						Dashboard
+						Profile
 					</DropdownMenuItem>
 					<DropdownMenuItem
 						className="cursor-pointer"

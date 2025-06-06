@@ -1,6 +1,6 @@
 import { AuthModal } from "./auth";
 import Header from "./Header";
-import Sidebar from "./Sidebar";
+import Sidebar from "./sidebar";
 import { Toaster } from "./ui/sonner";
 
 type AppWrapperProps = {

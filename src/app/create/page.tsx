@@ -1,3 +1,5 @@
+import CreatePost from "@/components/feed/CreatePost";
+
 export default function CreatePage() {
-	return <div>CreatePage</div>;
+	return <CreatePost />;
 }

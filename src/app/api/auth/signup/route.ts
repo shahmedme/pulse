@@ -2,7 +2,7 @@
 import { NextResponse } from "next/server";
 import { hash } from "bcryptjs";
 import { prisma } from "@/lib/prisma";
-import { generateUniqueUsername } from "@/lib/utils";
+import { generateUniqueUsername } from "@/utils/generator";
 
 export async function POST(req: Request) {
 	try {

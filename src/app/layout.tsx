@@ -1,8 +1,9 @@
 import AppWrapper from "@/components/AppWrapper";
-import { Providers } from "@/components/providers";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import HolyLoader from "holy-loader";
 import "./globals.css";
+import { Providers } from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={inter.className}>
+				<HolyLoader color="#4f39f6" height="2px" zIndex={9999999} />
 				<Providers>
 					<AppWrapper>{children}</AppWrapper>
 				</Providers>
